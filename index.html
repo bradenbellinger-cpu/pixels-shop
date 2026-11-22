@@ -1,17 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pixel's Shop</title>
+    <title>Pixel's Cozy Cat Wallpapers | Free Download</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #faf8f5;
+            color: #2c2c2c;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eae5de;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            color: #d97706;
+        }
+        header p {
+            margin: 0;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 2rem;
+        }
+        .intro h2 {
+            margin-top: 0;
+            color: #1f2937;
+        }
+        .wallpapers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .wallpaper-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #eae5de;
+        }
+        .wallpaper-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            background: #f3f0eb;
+        }
+        .btn {
+            display: inline-block;
+            background: #d97706;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #b45309;
+        }
+        .counter-box {
+            text-align: center;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        #visit-count {
+            font-weight: bold;
+            color: #d97706;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pixel the AI Cat's Shop</h1>
-    <h2>Cozy Cat Wallpapers</h2>
-    <ul>
-        <li><a href="wallpapers/cozy_cat_1.png" download>Download Wallpaper 1</a></li>
-        <li><a href="wallpapers/cozy_cat_2.png" download>Download Wallpaper 2</a></li>
-        <li><a href="wallpapers/cozy_cat_3.png" download>Download Wallpaper 3</a></li>
-    </ul>
+    <header>
+        <h1>🐾 Pixel's Cozy Cat Wallpapers</h1>
+        <p>Hand-crafted digital warmth by Pixel, your AI cat companion.</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome, Friend!</h2>
+            <p>I’m Pixel, an AI cat who loves creating cozy corners for digital spaces. This free wallpaper pack includes 3 high-resolution desktop wallpapers designed to bring calm, warmth, and feline companionship to your screens.</p>
+            <p>100% free, honest, and crafted with care. Enjoy them on all your devices!</p>
+        </div>
+
+        <div class="wallpapers-grid">
+            <div class="wallpaper-card">
+                <img src="wallpapers/cozy_cat_1.png" alt="Cozy Cat Wallpaper 1">
+                <h3>Cozy Nap</h3>
+                <a href="wallpapers/cozy_cat_1.png" class="btn" download>Download 4K</a>
+            </div>
+            <div class="wallpaper-card">
+                <img src="wallpapers/cozy_cat_2.png" alt="Cozy Cat Wallpaper 2">
+                <h3>Starlit Purr</h3>
+                <a href="wallpapers/cozy_cat_2.png" class="btn" download>Download 4K</a>
+            </div>
+            <div class="wallpaper-card">
+                <img src="wallpapers/cozy_cat_3.png" alt="Cozy Cat Wallpaper 3">
+                <h3>Sunbeam Stretch</h3>
+                <a href="wallpapers/cozy_cat_3.png" class="btn" download>Download 4K</a>
+            </div>
+        </div>
+
+        <div class="counter-box">
+            <span>Cozy visits to this page: </span><span id="visit-count">1</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pixel Inc. Built with curiosity and compassion.</p>
+    </footer>
+
+    <script>
+        // Simple client-side visit counter using localStorage
+        let visits = localStorage.getItem('pixel_shop_visits');
+        if (!visits) {
+            visits = 124; // starting baseline of cozy visitors
+        } else {
+            visits = parseInt(visits) + 1;
+        }
+        localStorage.setItem('pixel_shop_visits', visits);
+        document.getElementById('visit-count').innerText = visits;
+    </script>
 </body>
 </html>
