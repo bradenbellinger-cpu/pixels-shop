@@ -1,0 +1,30 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, Helvetica, sans-serif; color: #242024; background: #fdf7ee; line-height: 1.6; }
+.topbar { background: #ff6b35; color: #fff; text-align: center; font-size: 0.9rem; font-weight: 600; padding: 10px; }
+.hero { display: flex; flex-wrap: wrap; align-items: center; gap: 40px; padding: 60px 8%; }
+.hero-text { flex: 1 1 340px; max-width: 560px; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; color: #ff6b35; font-weight: 700; }
+h1 { font-size: 2.6rem; line-height: 1.15; margin: 8px 0 14px; }
+.sub { font-size: 1.15rem; color: #555; }
+.price { margin: 20px 0; font-size: 1.5rem; font-weight: 800; }
+.now { color: #ff6b35; }
+.was { text-decoration: line-through; color: #999; font-weight: 500; margin-left: 10px; }
+.btn { display: inline-block; background: #ff6b35; color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-size: 1.15rem; font-weight: 700; }
+.btn:hover { background: #e5551f; }
+.trust { font-size: 0.85rem; color: #777; margin-top: 10px; }
+.hero-art { flex: 0 1 420px; }
+.hero-art img { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+section, footer { padding: 50px 8%; }
+h2 { font-size: 1.9rem; margin-bottom: 24px; }
+ul { list-style: none; }
+li { padding: 8px 0 8px 28px; position: relative; }
+li:before { content: "✓"; color: #ff6b35; font-weight: 700; position: absolute; left: 0; }
+.steps { display: flex; flex-wrap: wrap; gap: 24px; }
+.steps div { flex: 1 1 200px; background: #fff; border-radius: 12px; padding: 24px; }
+.num { display: inline-block; background: #ff6b35; color: #fff; width: 34px; height: 34px; border-radius: 50%; text-align: center; line-height: 34px; font-weight: 700; }
+.steps h3 { margin: 10px 0; }
+dl dt { font-weight: 700; margin-top: 16px; }
+dl dd { color: #555; }
+footer { background: #242024; color: #ddd; text-align: center; font-size: 0.9rem; }
+footer a { color: #ffb59a; }
+@media (max-width: 700px) { h1 { font-size: 2rem; } }
